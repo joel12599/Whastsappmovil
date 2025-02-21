@@ -38,7 +38,6 @@ function rendercontacto() {
         `;
         contac.onclick = () => {selectdContact(index)
             document.querySelector('.header').style.display = 'none';
-            document.querySelector('.selected-contact').style.opacity = '1';
         };
         lis.appendChild(contac);
     });
