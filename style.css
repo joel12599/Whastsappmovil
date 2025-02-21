@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  
+  aside {
+    width: 30%;
+    background-color: #075e54;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #128c7e;
+  }
+  
+  nav {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  nav input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-transform: capitalize;
+  }
+  
+  button {
+    background-color: #128c7e;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  button:hover {
+    background-color: #34968b;
+  }
+  #contact-list {
+    flex: 1;
+    background-color: white;
+    padding: 10px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  } 
+  
+  .contacto {
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+  }
+  #img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    transition: 1s;
+  }
+  #img img:hover {
+    width: 60px;
+    height: 60px;
+  }
+  #info {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+  }
+  .contacto:hover {
+    background-color: #f0f0f0;
+  }
+  h3 {
+    font-size: 16px;
+    margin: 0;
+    color: black;
+  }
+  p {
+    font-size: 14px;
+    margin: 0;
+    color: rgb(70, 67, 67);
+  }
+  
+  main {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e5ddd5;
+  }
+  
+  .header {
+    background-color: #075e54;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .header h2 {
+    text-align: center;
+  }
+  
+  .selected-contact {
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+  }
+  .selected-contact h3 {
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #333;
+  }
+  .selected-contact p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  #chat-messages {
+    flex: 1;
+    padding: 20px;
+    background-color: #e5ddd5;
+    overflow-y: auto;
+  }
+  
+  .chat-mensaje {
+    display: flex;
+    padding: 10px;
+    background-color: white;
+  }
+  .chat-mensaje input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .mensaje.enviado {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .mensaje-enviado {
+    background-color: #dcf8c6;
+    padding: 10px 15px;
+    border-radius: 8px;
+    max-width: 60%;
+    word-wrap: break-word;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    aside, main {
+      width: 100%;
+    }
+    .header {
+      padding: 15px;
+    }
+    nav {
+      flex-direction: column;
+    }
+    nav input {
+      margin-bottom: 5px;
+    }
+    .selected-contact h3 {
+      font-size: 16px;
+    }
+    .selected-contact p {
+      font-size: 12px;
+    }
+    button {
+      padding: 8px;
+    }
+  }
+  

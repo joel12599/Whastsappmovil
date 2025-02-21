@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp</title>
+  <link rel="icon" type="image/PNG" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside>
+      <header >
+        <h2>Contacto - WhatsApp</h2>
+      </header>
+      <nav>
+        <input id="name-nombre" type="text" placeholder="(ej: Url*Juan*315853948)">
+        <button id="Agregar">Agregar</button>
+      </nav>
+      <div id="contact-list"></div>
+    </aside>
+
+    <main class="chat">
+      <div class="header">
+        <h2>Chat - WhatsApp</h2>
+      </div>
+
+      <div class="selected-contact">
+        <div class="mas">
+             <img id="selected-img">
+        </div>
+       <div class="menos">
+        <h3 id="selected-contact-name"></h3>
+        <p id="selected-contact-number"></p>
+    </div>
+        
+      </div>
+
+      <div id="chat-messages" class="chat-box"></div>
+
+      <div class="chat-mensaje">
+        <input id="message-input" type="text" placeholder="Escribe un mensaje...">
+        <button id="send-button">Enviar</button>
+      </div>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
